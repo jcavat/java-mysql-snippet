@@ -17,7 +17,7 @@ public class App {
       Class.forName(driver);
 
       try (Connection con = DriverManager.getConnection(dbUrl, user, pass);
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM Conference");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM Conference;");
             ResultSet rs = ps.executeQuery()) {
 
          while (rs.next()) {
