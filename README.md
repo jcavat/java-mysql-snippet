@@ -1,6 +1,15 @@
 # Java 11 + MySQL + JDBC Driver
 
-### How to run
+## How to run
+
+### Docker
+
+```
+cd docker
+docker-compose up -d
+```
+
+### Java
 
 ```
 mvn package
